@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@lib/*": ["lib/*"],
+      "@assets/*": ["assets/*"],
+      "@components": ["components"],
+      "@components/*": ["components/*"],
+      "@commerce": ["commerce"],
+      "@commerce/*": ["commerce/*"],
+      "@config/*": ["config/*"],
+      "@utils/*": ["utils/*"],
+      "@framework": ["framework"],
+      "@framework/*": ["framework/local/*"],
+      "@data/*": ["data/*"],
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Helmona Storefront | By Anna Deak",
+  "titleTemplate": "%s - Helmona Storefront",
+  "description": "Website with all information about Helmona brand. Her products, designs and services  - https://www.helmona.com",
+  "openGraph": {
+    "title": "Helmona Storefront | By Anna Deak",
+    "description": "Website with all information about Helmona brand. Her products, designs and services  - https://www.helmona.com",
+    "type": "website",
+    "locale": "en_IE",
+    "url": "https://helmona.com",
+    "site_name": "Helmona Commerce",
+    "images": [
+      {
+        "url": "/card.png",
+        "width": 800,
+        "height": 600,
+        "alt": "Helmona Commerce"
+      }
+    ]
+  },
+  "twitter": {
+    "handle": "@helmona",
+    "site": "@helmona",
+    "cardType": "summary_large_image"
+  }
+}
