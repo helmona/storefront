@@ -8,6 +8,7 @@ export { default as Marquee } from './Marquee' */
 export { default as HellLayout } from './HellLayout'
 export { default as HellNav } from './HellNav'
 export { default as Logo } from './Logo'
+export { default as ShopButton } from './ShopButton'
 
 /* export { default as Button } from './Button'
 export { default as Container } from './Container'

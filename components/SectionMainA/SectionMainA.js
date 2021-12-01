@@ -1,15 +1,15 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-const debug = process.env.NODE_ENV !== "production";
+const prefix = process.env.NEXT_PUBLIC_PREFIX;
+console.log('process', process.env.NEXT_PUBLIC_PREFIX);
 
-const prefix = debug ? '/storefront/' : '/storefront/';
-
+console.log(process.env);
 const images = [{
-  src: prefix + 'assets/helmona_geode_earing_turquoise.jpg',
+  src: prefix + '/assets/helmona_geode_earing_turquoise.jpg',
   alt: 'Fantastic turquoise earnings easy to wear for any occassion'
 }, {
-  src: prefix + 'assets/helmona_geode_ring_turquoise.jpg',
+  src: prefix + '/assets/helmona_geode_ring_turquoise.jpg',
   alt: 'Fantastic turquoise earnings easy to wear for any occassion'
 }];
 
