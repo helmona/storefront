@@ -19,7 +19,7 @@ const images = [{
 const SectionMainB = () => {
   
   return (
-    <div className="container mx-auto flex w-full pt-16 pb-16  min-h-section">
+    <div className="container mx-auto flex w-full min-h-section">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 place-items-center h-full mr-5 ml-5 md:mr-0 md:ml-0 pt-3">
         <div className="w-full pt-24 md:pt-20">
           <div className="grid grid-cols-2 gap-5 lg:gap-2  w-full min-h-full">
