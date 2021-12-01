@@ -3,13 +3,13 @@ import { useRouter } from 'next/router'
 
 const debug = process.env.NODE_ENV !== "production";
 
-const prefix =  debug ? '/storefront/' : '/';
+const prefix = debug ? '/storefront/' : '/storefront/';
 
 const images = [{
   src: prefix + 'assets/helmona_geode_earing_turquoise.jpg',
   alt: 'Fantastic turquoise earnings easy to wear for any occassion'
 }, {
-  src: prefix + '/assets/helmona_geode_ring_turquoise.jpg',
+  src: prefix + 'assets/helmona_geode_ring_turquoise.jpg',
   alt: 'Fantastic turquoise earnings easy to wear for any occassion'
 }];
 
