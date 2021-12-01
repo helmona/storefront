@@ -1,5 +1,6 @@
 module.exports = {
   reactStrictMode: true,
+  assetPrefix: '/storefront/',
   experimental: {
     urlImports: [
       "https://framer.com/m/",
