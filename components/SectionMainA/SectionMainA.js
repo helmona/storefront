@@ -23,7 +23,7 @@ const SectionMainA = () => {
           <p className="text-sm mb-6">These beautiful vibrant gems are part of my new geometric collection, they are handmade by me and each piece is unique. Made in bright fancy colors and presenting minimalistic modern design. Even though they are similar to each other, they are not identical due my own technique of crafting the polymeric materials.</p>
 
           <div className="flex justify-center">
-            <a href="#_" className="relative px-6 py-3 font-bold text-black group">
+            <a href="https://www.etsy.com/shop/HELMONA?ref=condensed_trust_header_title_updates&section_id=20981085" className="relative px-6 py-3 font-bold text-black group">
               <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-graywhite group-hover:translate-x-0 group-hover:translate-y-0"></span>
               <span className="absolute inset-0 w-full h-full border-4 border-black"></span>
               <span className="relative">SHOW NOW</span>

@@ -26,7 +26,7 @@ const SectionMainC = () => {
           <p className="text-sm mb-6">I led my intuition to follow the most relaxing forms and patterns. Like black and white in harmonious yin-yang, the whole creative process guided me into the circular particles, "O" and "D" shapes of very unique marble patterns made out of polymer clay. When I started to study a bit of geology and the process about how the original inorganics had melted together, it inspired me to create my own technique to reach a similar effect. Now, after months of experiments, I would like to proudly introduce you to my results.</p>
 
           <div className="flex justify-center">
-            <a href="#_" className="relative px-6 py-3 font-bold text-black group">
+            <a href="https://www.etsy.com/shop/HELMONA?ref=condensed_trust_header_title_updates&section_id=20986288" className="relative px-6 py-3 font-bold text-black group">
               <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-graywhite group-hover:translate-x-0 group-hover:translate-y-0"></span>
               <span className="absolute inset-0 w-full h-full border-4 border-black"></span>
               <span className="relative">SHOW NOW</span>
