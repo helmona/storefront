@@ -28,11 +28,10 @@ const SectionMainA = () => {
               <span className="absolute inset-0 w-full h-full border-4 border-black"></span>
               <span className="relative">SHOW NOW</span>
             </a>
-            
           </div>
         </div>
 
-        <div className="w-full pt-12 md:pt-20">
+        <div className="w-full pt-24 md:pt-20">
           <div className="grid grid-cols-2 gap-5 lg:gap-2  w-full min-h-full">
             <div className="flex h-full">
               <img
