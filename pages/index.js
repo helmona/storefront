@@ -30,7 +30,7 @@ export default function Home() {
       <SectionMainC />
     
 
-      <footer className="bg-blacky h-1/5">
+      <footer className="bg-blacky">
         <div className="container mx-auto pt-6 flex space-between">
           <div className="grid grid-cols-2 w-full">
             <div className="">
