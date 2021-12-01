@@ -2,7 +2,7 @@
 const HellFooter = () => {
   return (  
     <footer className="bg-blacky">
-        <div className="container mx-auto pt-6 flex space-between">
+        <div className="container mx-auto flex space-between">
           <div className="grid grid-cols-2 w-full">
             <div className="">
               <a
