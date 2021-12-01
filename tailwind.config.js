@@ -463,6 +463,8 @@ module.exports = {
       '5/6': '83.333333%',
       full: '100%',
       screen: '100vh',
+      64:	'16rem',
+
     }),
     inset: (theme, { negative }) => ({
       auto: 'auto',
@@ -575,6 +577,7 @@ module.exports = {
       0: '0px',
       full: '100%',
       screen: '100vh',
+      section: '60%',
     },
     minWidth: {
       0: '0px',
