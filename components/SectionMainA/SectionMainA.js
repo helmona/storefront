@@ -1,9 +1,17 @@
-
-// import cn from 'classnames'
-
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+const debug = process.env.NODE_ENV !== "production";
+
+const prefix =  debug ? '/storefront/' : '/';
+
+const images = [{
+  src: prefix + 'assets/helmona_geode_earing_turquoise.jpg',
+  alt: 'Fantastic turquoise earnings easy to wear for any occassion'
+}, {
+  src: prefix + '/assets/helmona_geode_ring_turquoise.jpg',
+  alt: 'Fantastic turquoise earnings easy to wear for any occassion'
+}];
 
 const SectionMainA = () => {
   
@@ -29,14 +37,14 @@ const SectionMainA = () => {
             <div className="flex h-full">
               <img
                 className="object-cover h-64 w-64"
-                src="/assets/helmona_geode_earing_turquoise.jpg" 
-                alt="Fantastic turquoise earnings easy to wear for any occassion" />
+                src={images[0].src} 
+                alt={images[0].alt} />
             </div>
             <div className="flex justify-end">
               <img 
                 className="object-cover h-64 w-64" 
-                src="/assets/helmona_geode_ring_turquoise.jpg" 
-                alt="Fantastic turquoise earnings easy to wear for any occassion" / >
+                src={images[1].src} 
+                alt={images[1].alt} />
             </div>
           </div>
         </div>

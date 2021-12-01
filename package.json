@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "find:unused": "npx next-unused",
-    "deploy": "git subtree push --prefix out origin gh-pages"
+    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
     "@react-spring/web": "^9.2.1",
@@ -43,9 +43,11 @@
     "eslint": "7",
     "eslint-config-next": "12.0.3",
     "eslint-config-prettier": "^8.3.0",
+    "gh-pages": "^3.2.3",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.3.0"
+    "prettier": "^2.3.0",
+    "rimraf": "^3.0.2"
   },
   "next-unused": {
     "alias": {
