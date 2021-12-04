@@ -12,7 +12,7 @@ const MainBanner = ({ image, title, subtitle }) => (
       <h1 className="text-41xl font-bold tracking-widest lg:tracking-huge lg:tracking-widest leading-tight -mt-20 lg:mt-0 text-black flex animate-fade-in-right font-sans">
         { title }
       </h1>
-      <h4 className = "lg:text-4xl text-xl font-normal leading-normal mt-0 mb-2 text-white flex animate-fade-in-left font-sans">
+      <h4 className = "lg:text-2xl text-xl font-normal leading-normal mt-0 mb-2 text-white flex animate-fade-in-left font-sans">
         { subtitle }
       </h4>
     </div>

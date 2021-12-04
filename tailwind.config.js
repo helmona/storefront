@@ -575,6 +575,7 @@ module.exports = {
     }),
     minHeight: {
       0: '0px',
+      60: '80px',
       full: '100%',
       screen: '100vh',
       section: '60%',
@@ -1028,6 +1029,7 @@ module.exports = {
         {
           [`@media (min-width: ${screens.md})`]: {
             ".container": {
+              // "max-width": "768px",
               "max-width": "768px",
             },
           },
@@ -1035,14 +1037,14 @@ module.exports = {
         {
           [`@media (min-width: ${screens.lg})`]: {
             ".container": {
-              "max-width": "1024px",
+              "max-width": "980px",
             },
           },
         },
         {
           [`@media (min-width: ${screens.xl})`]: {
             ".container": {
-              "max-width": "1280px",
+              "max-width": "980px",
             },
           },
         },
