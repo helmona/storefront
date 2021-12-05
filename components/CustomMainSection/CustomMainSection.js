@@ -7,18 +7,16 @@ const prefix = process.env.NEXT_PUBLIC_PREFIX;
 
 const Contentcomponent = ({ mode, content }) => {
   const size = useWindowSize();
-
-  console.log('size nnn', size);
   const { title, subtitle, desc, link } = content;
   const containerClass = classNames({
-    'flex flex-col flex-grow md:pt-20 h-full': true,
+    'flex flex-col flex-grow md:pt-10 h-full': true,
     'lg:pr-20 pr-0': mode === 'A',
     'lg:pl-20 pl-0': mode === 'B',
   })
 
   return (
     <div className={containerClass}>
-      <h1 className="text-41xl font-bold leading-tight tracking-huge mt-16 mb-2">{ title }<br/>{ subtitle }</h1>
+      <h1 className="text-41xl font-bold leading-tight tracking-huge md:mt-4 mt-16 mb-2">{ title }<br/>{ subtitle }</h1>
       <p className="text-sm mb-6">{ desc }</p>
 
       <div className="flex justify-center items-end mt-auto">
@@ -49,7 +47,7 @@ const ImagesComponent = ({ mode, images, shopLink }) => {
   }
   
   return (
-    <div className="w-full md:pt-20">
+    <div className="w-full md:pt-2">
       <div className="grid grid-cols-2 gap-5 lg:gap-2 w-full min-h-full">
         <div className="flex h-full">
           <img
@@ -65,10 +63,10 @@ const ImagesComponent = ({ mode, images, shopLink }) => {
         </div>
       </div>
       { (size.width <= '1024') && (
-        <div className="flex justify-center items-end md:mt-auto mt-10">
+        <div className="flex justify-center items-end lg:mt-auto mt-10 md:mt-10">
           <ShopButton 
-            url={shopLink.url}
-            message={shopLink.message} />
+            url={(shopLink && shopLink.url) ? shopLink.url : '' }
+            message={ shopLink && shopLink.message ? shopLink.message : ''} />
         </div>
       )}
     </div>
@@ -81,7 +79,7 @@ const CustomMainSection = ({ images, content, mode }) => {
   const isMobile = (size.width < '1024');
 
   return (
-    <div className="container mx-auto flex w-full pb-8  min-h-section">
+    <div className="container mx-auto flex w-full pb-8  min-h-section mb-4">
       { (mode === 'A' || isMobile) ? (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 place-items-center h-full mr-5 ml-5 md:mr-0 md:ml-0 pt-5">
           <Contentcomponent mode={mode} content={content} />

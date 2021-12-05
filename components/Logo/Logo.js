@@ -2,8 +2,6 @@ import { useWindowSize } from '@lib/hooks/useWindowSize';
 
 const Logo = () => {
   const size = useWindowSize();
-
-  console.log('size aa', size);
   const viewBox = (size.width < 1200) ? '0 0 200 200' : '0 0 200 200';
   const classes = (size.width < 1200) ? 'w-20 h-20 fill-current text-black bg-graywhite' : 'w-28 h-auto fill-current text-black bg-graywhite';
 

@@ -65,7 +65,6 @@ const Logo = () => (
 
 const HellFooter = () => {
   const size = useWindowSize();
-  console.log('size footer', size)
   return (  
     <footer className="bg-blacky min-h-60">
         <div className="container mx-auto flex space-between sm:pl-5 sm:pr-5">

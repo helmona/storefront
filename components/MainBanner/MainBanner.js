@@ -1,5 +1,5 @@
 const MainBanner = ({ image, title, subtitle }) => (
-  <main className="relative w-full h-4/5 overflow-hidden">
+  <main className="relative w-full h-4/5 overflow-hidden mb-16">
     <img 
       src={image}
       className="w-full h-full" 
