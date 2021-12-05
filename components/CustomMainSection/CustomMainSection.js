@@ -7,6 +7,8 @@ const prefix = process.env.NEXT_PUBLIC_PREFIX;
 
 const Contentcomponent = ({ mode, content }) => {
   const size = useWindowSize();
+
+  console.log('size nnn', size);
   const { title, subtitle, desc, link } = content;
   const containerClass = classNames({
     'flex flex-col flex-grow md:pt-20 h-full': true,
@@ -47,7 +49,7 @@ const ImagesComponent = ({ mode, images, shopLink }) => {
   }
   
   return (
-    <div className="w-full pt-24 md:pt-20">
+    <div className="w-full md:pt-20">
       <div className="grid grid-cols-2 gap-5 lg:gap-2 w-full min-h-full">
         <div className="flex h-full">
           <img
@@ -62,13 +64,13 @@ const ImagesComponent = ({ mode, images, shopLink }) => {
             alt={images[1].alt} />
         </div>
       </div>
-       <div className="flex justify-center items-end mt-auto">
-        { (size.width <= '1024') && (
+      { (size.width <= '1024') && (
+        <div className="flex justify-center items-end md:mt-auto mt-10">
           <ShopButton 
             url={shopLink.url}
             message={shopLink.message} />
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

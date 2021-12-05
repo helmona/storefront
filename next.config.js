@@ -2,8 +2,8 @@ const debug = process.env.NODE_ENV !== "production";
 
 module.exports = {
   reactStrictMode: true,
-  basePath: '',
-  assetPrefix: !debug ? '/' : '', 
+  basePath: '', 
+  assetPrefix: !debug ? '/' : '',
   /* basePath: '/storefront', */
   exportPathMap: function () {
     return {
